@@ -1,0 +1,16 @@
+.banner{
+
+    margin-top: 1rem;
+
+    & img{
+        width: 100%;
+        height: 32vh;
+
+        @include phone-view{
+            height: 14vh;
+        }
+        object-fit: cover;
+        object-position: center;
+    }
+    
+}

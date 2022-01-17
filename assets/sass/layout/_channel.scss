@@ -1,0 +1,43 @@
+.channel{
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid lightgray;
+
+    @include phone-view{
+        border: none;
+        width: 100%;
+    }
+
+    &__Info{
+        display: flex;
+        justify-content: space-between;
+        width: 23%;
+
+        @include phone-view{
+            width: 100%;
+            justify-content: start;
+            margin-inline: 3rem;
+        }
+
+        &--photo{
+            width: 5rem;
+            margin-left: 5rem;
+            border-radius: 100%;
+
+            @include phone-view{
+                margin-left: 0;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &__Buttons{
+        margin-right: 7rem;
+        @include phone-view{
+            display: none;
+        }
+    }
+       
+}

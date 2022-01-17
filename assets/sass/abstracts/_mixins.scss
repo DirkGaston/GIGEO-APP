@@ -1,0 +1,12 @@
+
+@mixin tablet-view{
+    @media (max-width:#{$min-tablet}){
+        @content;
+    }
+}
+
+@mixin phone-view{
+    @media (max-width:#{$min-phone}){
+        @content;
+    }
+}

@@ -1,0 +1,59 @@
+.navbar{
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-toggler{
+        border: none !important;
+
+        & i{
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+    }
+
+    &__Brand{
+        width: 12rem;
+        margin-left: 5rem;
+
+        @include phone-view{
+            margin-left: 2rem;
+        }
+    }
+
+    &__Menu{
+        display: flex;
+        padding-right: 5rem;
+
+        &--icon{
+            list-style: none;
+            margin-right: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+            list-style: none;
+            align-items: center;
+            display: flex;
+            @include phone-view{
+                margin-block: 1rem;
+            }
+
+          
+
+        }
+
+        &--icon:nth-child(5){
+            @include phone-view{
+                display: none;
+            }
+            
+        }
+
+    }
+
+    
+}
+

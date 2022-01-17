@@ -1,0 +1,52 @@
+.videos{
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phone-view{
+        justify-content: center;
+    }
+
+    &__Title{
+        margin-left: 8rem;
+        width: 50%;
+        
+        @include phone-view{
+            width: 100%;
+            margin-inline: 6rem;
+        }
+    }
+
+    & article{
+        margin-block: 1rem;
+        
+        @include phone-view{
+            margin-inline: 3rem;
+            width: 75%;
+        }
+    }
+
+    article img{
+        width: 20rem;
+        height: 12rem;
+    }
+
+    article h2{
+        margin-top: 1rem;
+    }
+
+    article h3{
+        margin-top: 1rem;
+    }
+}
+
+.row {
+    margin-left: 4rem;
+    margin-right: 6rem;
+
+    @include phone-view{
+        margin-right: 0;
+        margin-left: 0;
+        display: flex;
+    }
+}

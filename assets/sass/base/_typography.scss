@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.channel__Info--stats{
+
+    & h2{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    & h3{
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+}
+
+.videos{
+    &__Title{
+        font-size: 2.5rem;
+        font-weight: 400;
+        @include phone-view{
+            font-size: 2rem;
+        }
+    }
+
+    &__Gallery h2{
+        font-size: 1.5rem;
+        font-weight: 500
+    }
+
+    &__Gallery h3{
+        font-size: 1.3rem;
+        font-weight: 400
+    }
+}
+
